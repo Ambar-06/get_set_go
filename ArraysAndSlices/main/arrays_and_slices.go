@@ -38,4 +38,10 @@ func main() {
 	// The number of elements from the starting index of the slice (index 1) to the end of the original array.
 	// In this case: from "b" (index 1) to "d" (index 3) — total 3 elements: "b", "c", "d" → so cap(s1) == 3
 
+	// Slices can also be created directly without creating an array like
+	sli1 := make([]int, 10) // make function arguments ; type, length/capacity ([]int, 10) or type, length, capacity ([]int, 10, 15)
+	fmt.Println("Slice created directly: ", sli1)
+	fmt.Println(len(sli1)) // 10
+	fmt.Println(cap(sli1)) // 10
+
 }
